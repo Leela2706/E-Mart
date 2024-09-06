@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
@@ -15,59 +15,62 @@ const Navbar = () => {
                     <div className="user-details">
                         SignIN/SignUp
                     </div>
-                    <div className="cart">
-                        cart
-                    </div>
+
+                    <Link to='/cart'>
+                        <div className="cart">
+                            cart
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className='subMenu'>
                 <ul>
                     <Link to="/mobiles">
-                    <li>Mobiles</li>
+                        <li>Mobiles</li>
                     </Link>
 
                     <Link to="/books">
-                    <li>Books</li>
+                        <li>Books</li>
                     </Link>
 
                     <Link to="/fridge">
-                    <li>Fridge</li>
+                        <li>Fridge</li>
                     </Link>
-                    
+
                     <Link to="/speaker">
-                    <li>Speaker</li>
+                        <li>Speaker</li>
                     </Link>
 
                     <Link to="/Tv">
-                    <li>TV</li>
+                        <li>TV</li>
                     </Link>
-                    
+
                     <Link to="/computer">
-                    <li>Computer</li>
+                        <li>Computer</li>
                     </Link>
-                    
+
                     <Link to="/watch">
-                    <li>Watches</li>
+                        <li>Watches</li>
                     </Link>
 
                     <Link to="/man">
-                    <li>Man Fashion</li>
+                        <li>Man Fashion</li>
                     </Link>
-                    
+
                     <Link to="/women">
-                    <li>women Dressing</li>
+                        <li>women Dressing</li>
                     </Link>
-                   
+
                     <Link to="furniture">
-                    <li>Furniture</li>
+                        <li>Furniture</li>
                     </Link>
-                    
+
                     <Link to={"/ac"}>
-                    <li>Ac</li>
+                        <li>Ac</li>
                     </Link>
 
                     <Link to="/kitchen">
-                    <li>Kitchen</li>
+                        <li>Kitchen</li>
                     </Link>
                 </ul>
             </div>

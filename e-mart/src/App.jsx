@@ -17,16 +17,19 @@ import WomenPage from './Stores/Pages/WomenPage'
 import FurniturePage from './Stores/Pages/FurniturePage'
 import KitchenPage from './Stores/Pages/KitchenPage'
 import MobileSingle from './Singles/MobileSingle'
-
+import userCart from './Stores/userCart'
 
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+
+      <h2>hello</h2>
+
+      
+      {/* <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        {/* <Route path='kitchen' element={k}/> */}
         <Route path='/mobiles' element={<MobilesPage />} />
         <Route path='/ac' element={<AcPage />} />
         <Route path="/watch" element={<WatchesPage />} />
@@ -41,7 +44,8 @@ const App = () => {
         <Route path='kitchen' element={<KitchenPage/>}/>
 
         <Route path='/mobiles/:id' element={<MobileSingle/>}/>
-      </Routes>
+        <Route path='/cart' element={<userCart/>}/>
+      </Routes> */}
     </div>
   )
 }

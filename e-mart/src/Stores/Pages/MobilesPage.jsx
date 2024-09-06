@@ -10,7 +10,7 @@ const MobilesPage = () => {
         if (selectedProduct.includes(mango)){
             setSelectedProduct(selectedProduct.filter(item => item !== mango))
         }else{
-            setSelectedProduct([mango])
+            setSelectedProduct([...selectedProduct,mango])
         }
     }
 

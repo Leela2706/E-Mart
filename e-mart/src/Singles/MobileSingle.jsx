@@ -1,11 +1,13 @@
 import React from 'react'
 import { mobileData } from '../Stores/data/mobiles' 
 import { useParams } from "react-router-dom"
-import Navbar from '../Stores/Components/Navbar'
+import { useCart } from '../Context/CartContext'
 
-const MobileSingle = () => {
+ const MobileSingle = () => {
 
     const {id} = useParams () 
+
+    const {addToCart, cartItems} = useCart()
 
     const product = mobileData.find((item)=>item.id === id)
 
@@ -31,11 +33,11 @@ const MobileSingle = () => {
     <div className="ind-desc space">
         <p>{product.description }</p>
     </div>
-    <button>Ad to Cart</button>
+    <button onClick={()=>addToCart(product)}>Ad to Cart</button>
    </div>
    </div>
    </>
   )
 }
 
-export default MobileSingle
+export default MobileSingle;
