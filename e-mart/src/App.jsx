@@ -16,18 +16,16 @@ import ManPage from './Stores/Pages/ManPage'
 import WomenPage from './Stores/Pages/WomenPage'
 import FurniturePage from './Stores/Pages/FurniturePage'
 import KitchenPage from './Stores/Pages/KitchenPage'
-import MobileSingle from './Singles/MobileSingle'
-import userCart from './Stores/userCart'
+import MobileSingle from './Stores/Components/Singles/MobileSingle'
+import UserCart from './Stores/userCart'
 
 
 const App = () => {
   return (
     <div>
 
-      <h2>hello</h2>
 
-      
-      {/* <Navbar />
+      <Navbar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/mobiles' element={<MobilesPage />} />
@@ -44,8 +42,8 @@ const App = () => {
         <Route path='kitchen' element={<KitchenPage/>}/>
 
         <Route path='/mobiles/:id' element={<MobileSingle/>}/>
-        <Route path='/cart' element={<userCart/>}/>
-      </Routes> */}
+        <Route path='/cart' element={<UserCart/>}/>
+      </Routes>
     </div>
   )
 }

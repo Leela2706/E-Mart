@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { useCart } from '../Context/CartContext' 
+import { useCart } from './Context/CartContext' 
 
-const userCart = () => {
+const UserCart = () => {
 
     const {cartItems, addToCart} = useCart()
 
@@ -30,4 +30,4 @@ const userCart = () => {
   )
 }
 
-export default userCart
+export default UserCart

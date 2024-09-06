@@ -1,5 +1,5 @@
 import React from 'react'
-import { mobileData } from '../Stores/data/mobiles' 
+import { mobileData } from '../../data/mobiles' 
 import { useParams } from "react-router-dom"
 import { useCart } from '../Context/CartContext'
 
