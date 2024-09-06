@@ -18,6 +18,14 @@ import FurniturePage from './Stores/Pages/FurniturePage'
 import KitchenPage from './Stores/Pages/KitchenPage'
 import MobileSingle from './Stores/Components/Singles/MobileSingle'
 import UserCart from './Stores/userCart'
+import AcSingle from './Stores/Singles/AcSingle'
+import ComputerSingle from './Stores/Singles/ComputerSingle'
+import FurnitureSingle from './Stores/Singles/FurnitureSingle'
+import KitchenSingle from './Stores/Singles/Kitchen'
+import MenSingle from './Stores/Singles/MensSingle'
+import WatchSingle from './Stores/Singles/WatchSingles'
+import WomanSingle from './Stores/Singles/WomensSingle'
+import FridgeSingle from './Stores/Singles/FridgeSingle'
 
 
 const App = () => {
@@ -37,12 +45,20 @@ const App = () => {
         <Route path='/fridge' element={<FridgePage />} />
         <Route path='/tV' element={<TvPage />} />
         <Route path="/men" element={<ManPage />} />
-        <Route path='women' element={<WomenPage/>}/>
-        <Route path='furniture' element={<FurniturePage/>}/>
-        <Route path='kitchen' element={<KitchenPage/>}/>
+        <Route path='women' element={<WomenPage />} />
+        <Route path='furniture' element={<FurniturePage />} />
+        <Route path='kitchen' element={<KitchenPage />} />
 
-        <Route path='/mobiles/:id' element={<MobileSingle/>}/>
-        <Route path='/cart' element={<UserCart/>}/>
+        <Route path='/mobiles/:id' element={<MobileSingle />} />
+        <Route path='/cart' element={<UserCart />} />
+        <Route path='/ac/:id' element={<AcSingle />} />
+        <Route path='/computer/:id' element={<ComputerSingle />} />
+        <Route path='/furniture/:id' element={<FurnitureSingle />} />
+        <Route path='/kitchen/:id' element={<KitchenSingle />} />
+        <Route path='/men/:id' element={<MenSingle />} />
+        <Route path='/watch/:id' element={<WatchSingle />} />
+        <Route path='/woman/:id' element={<WomanSingle />} />
+        <Route path='/fridge/:id' element={<FridgeSingle />} />
       </Routes>
     </div>
   )

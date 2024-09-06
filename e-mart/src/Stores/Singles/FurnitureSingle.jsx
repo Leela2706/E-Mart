@@ -1,16 +1,16 @@
 import React from "react";
-import { acData } from "../data/ac";
+import { furnitureData } from "../data/furniture";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
-import { useCart } from "../Context/CartContext"; 
+import { useCart } from "../Context/CartContext";
 
-const AcSingle = () => {
+const FurnitureSingle = () => {
   const { id } = useParams();
 
   const {addToCart, cartItems} = useCart()
 
-  const product = acData.find((item) => item.id === id);
+  const product = furnitureData.find((item) => item.id === id);
 
   return (
     <>
@@ -39,4 +39,4 @@ const AcSingle = () => {
   );
 };
 
-export default AcSingle;
+export default FurnitureSingle;

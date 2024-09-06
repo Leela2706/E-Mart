@@ -1,16 +1,16 @@
 import React from "react";
-import { acData } from "../Stores/data/ac";
+import { kitchenData } from "../data/kitchen";
 import { useParams } from "react-router-dom";
-import Navbar from "../Stores/components/Navbar";
+import Navbar from "../Components/Navbar";
 
-import { useCart } from "../Context/CartContext"; 
+import { useCart } from "../Context/CartContext";
 
-const AcSingle = () => {
+const KitchenSingle = () => {
   const { id } = useParams();
 
   const {addToCart, cartItems} = useCart()
 
-  const product = acData.find((item) => item.id === id);
+  const product = kitchenData.find((item) => item.id === id);
 
   return (
     <>
@@ -39,4 +39,4 @@ const AcSingle = () => {
   );
 };
 
-export default AcSingle;
+export default KitchenSingle;
