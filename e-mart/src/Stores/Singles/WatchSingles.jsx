@@ -15,7 +15,7 @@ const WatchSingle = () => {
 
   return (
     <>
-      <Navbar />
+
       <div className="ind-section">
         <div className="ind-image">
           <img src={product.image} alt="" />

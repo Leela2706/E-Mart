@@ -1,6 +1,5 @@
 import React from 'react'
-import { mobileData } from '../data/mobiles'
-
+import { mobileData } from './../data/mobiles'
 
 
 

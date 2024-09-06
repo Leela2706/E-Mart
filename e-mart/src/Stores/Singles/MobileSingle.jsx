@@ -1,8 +1,7 @@
 import React from 'react'
-import { mobileData } from '../../data/mobiles' 
 import { useParams } from "react-router-dom"
 import { useCart } from '../Context/CartContext'
-import Navbar from '../Components/Navbar'
+import { mobileData } from '../data/mobiles'
 
  const MobileSingle = () => {
 
@@ -17,7 +16,6 @@ import Navbar from '../Components/Navbar'
 
   return (
    <>
-   <Navbar/>
    <div className="ind-section">
     <div className="ind-image">
         <img src={product.image} alt="" />

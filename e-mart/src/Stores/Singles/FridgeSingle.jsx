@@ -1,7 +1,7 @@
 import React from "react";
 import { fridgeData } from "../data/fridge";
 import { useParams } from "react-router-dom";
-import Navbar from "../Components/Navbar";
+
 
 import { useCart } from "../Context/CartContext";
 
@@ -14,7 +14,6 @@ const FridgeSingle = () => {
 
   return (
     <>
-      <Navbar />
       <div className="ind-section">
         <div className="ind-image">
           <img src={product.image} alt="" />
